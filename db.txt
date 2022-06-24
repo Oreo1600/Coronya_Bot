@@ -1,0 +1,28 @@
+﻿User:
+
+                                {"userid",update.Message.From.Id.ToString()},
+                                {"useridLong",update.Message.From.Id},
+                                {"isUser",true},
+                                {"isInfected",false},
+                                {"tested","Not Yet Tested"},
+                                {"testMessage",DateTime.Now},
+                                {"testInProgress","NTest"},
+                                {"CoroCash",0},
+                                {"rank",0},
+                                {"lastMessage",DateTime.Now},
+                                {"dieMessage",DateTime.Now},
+                                {"getInfectedRate", 40},
+                                {"recoveryMessage",DateTime.Now},
+                                {"recoveryState", false},
+                                {"lastBetAmount", 0},
+                                {"middleNum",0 },
+                                {"inventory", new BsonArray{ } }
+
+Group:
+
+{"userid",update.Message.Chat.Id.ToString()},
+{"isCoronaThere",false},
+{"ZoneUntil",DateTime.Now },
+{"isCoronaLeaked",false},
+{"CoroCashMultiplier",0.0},
+{"party", new BsonArray {} }
